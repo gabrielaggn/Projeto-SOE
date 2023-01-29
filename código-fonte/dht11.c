@@ -68,7 +68,7 @@ void read_dht11_dat()
 	if ( (j >= 40) &&
 	     (dht11_dat[4] == ( (dht11_dat[0] + dht11_dat[1] + dht11_dat[2] + dht11_dat[3]) & 0xFF) ) )
 	{
-		printf( "Humidity = %d.%d %% Temperature = %d.%d *C (%.1f *F)\n",
+		printf( "Umidade = %d.%d %% Temperatura = %d.%d *C (%.1f *F)\n",
 			dht11_dat[0], dht11_dat[1], dht11_dat[2], dht11_dat[3]);
 	}else  {
 		printf( "Data not good, skip\n" );
@@ -85,7 +85,7 @@ int main( void )
 	while ( 1 )
 	{
 		read_dht11_dat();
-		delay( 1000 ); /* wait 1sec to refresh */
+		delay(2000); /* wait 1sec to refresh */
 	}
 
 	return(0);
