@@ -1,3 +1,4 @@
+#Desenvolvido para o projeto de SOE, UnB - GAMA. ALUNAS : GABRIELA GOES e PAMELA CAMPAGNUCCI
 import Adafruit_DHT
 import RPi.GPIO as GPIO
 import time
