@@ -1,3 +1,5 @@
+/*Desenvolvido para o projeto de SOE, UnB - GAMA. ALUNAS : GABRIELA GOES e PAMELA CAMPAGNUCCI*/
+
 #include <wiringPi.h>
 #include <stdio.h>
 #include <stdlib.h>
