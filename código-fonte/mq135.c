@@ -16,13 +16,13 @@ int main(void){
 
 	while(1){
 		if(digitalRead(alarme) == LOW){
-			/printf("ALERTA!!!");
+			//printf("ALERTA!!!");
 			system("sudo telegram  \"599113865 \"   \"ALERTA, SEU PET CORRE PERIGO\" ");
 			system("./buzzer");	
 			
 		}
 		else{
-			/printf("Tudo okay!");
+			//printf("Tudo okay!");
 			/*printf("%d", digitalRead(alarme));*/
 			digitalWrite(som, LOW);
 			usleep(500);	
