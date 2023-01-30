@@ -1,0 +1,7 @@
+{"ok":true,"result":[{"update_id":892756765,
+"message":{"message_id":27,"from":{"id":599113865,"is_bot":false,"first_name":"Gabriela","language_code":"pt-br"},"chat":{"id":599113865,"first_name":"Gabriela","type":"private"},"date":1674485511,"text":"Oi"}},{"update_id":892756766,
+"message":{"message_id":28,"from":{"id":599113865,"is_bot":false,"first_name":"Gabriela","language_code":"pt-br"},"chat":{"id":599113865,"first_name":"Gabriela","type":"private"},"date":1674485521,"text":"Ol\u00e1"}},{"update_id":892756767,
+"message":{"message_id":29,"from":{"id":599113865,"is_bot":false,"first_name":"Gabriela","language_code":"pt-br"},"chat":{"id":599113865,"first_name":"Gabriela","type":"private"},"date":1674485536,"text":"ola"}},{"update_id":892756768,
+"message":{"message_id":30,"from":{"id":599113865,"is_bot":false,"first_name":"Gabriela","language_code":"pt-br"},"chat":{"id":599113865,"first_name":"Gabriela","type":"private"},"date":1674485542,"text":"oi"}},{"update_id":892756769,
+"message":{"message_id":31,"from":{"id":599113865,"is_bot":false,"first_name":"Gabriela","language_code":"pt-br"},"chat":{"id":599113865,"first_name":"Gabriela","type":"private"},"date":1674485545,"text":"Oii"}},{"update_id":892756770,
+"message":{"message_id":32,"from":{"id":599113865,"is_bot":false,"first_name":"Gabriela","language_code":"pt-br"},"chat":{"id":599113865,"first_name":"Gabriela","type":"private"},"date":1674485548,"text":"Oiii"}}]}
