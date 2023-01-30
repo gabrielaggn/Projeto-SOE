@@ -43,7 +43,17 @@ do
                     fswebcam -r 1920x1080 --no-banner /home/gabriela/Desktop/$DATE.jpg
 
                     curl -F "chat_id=${message_chat_id[$id]}" -F "photo=@/home/gabriela/Desktop/$DATE.jpg" https://api.telegram.org/bot5930363802:AAH1VMsE95atmqlp9Eblrzjpe_cMR-czR-8/sendphoto
-                      
+                    
+                    python3 tempUmid.py
+                    
+                    var=$(cat dadostempumid.txt)
+                    
+                    ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
+                                         --text "{$var}" \
+                                         --parse_mode markdown
+                    
+                    
+                    
                 ;;
             esac
          fi

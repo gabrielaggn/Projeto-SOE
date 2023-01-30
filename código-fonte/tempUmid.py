@@ -14,14 +14,13 @@ pino_sensor = 4
 # Informacoes iniciais
 print ("*** Lendo os valores de temperatura e umidade");
  
-while(1):
-   # Efetua a leitura do sensor
-	umid, temp = Adafruit_DHT.read_retry(sensor, pino_sensor);
-   # Caso leitura esteja ok, mostra os valores na tela
-	if umid is not None and temp is not None:
-		print("Temperatura = {0:0.1f} C  Umidade = {1:0.1f} %".format(temp, umid));
-		print ("Aguarda 5 segundos para efetuar nova leitura...");
-		time.sleep(5)
-	else:
-		# Mensagem de erro de comunicacao com o sensor
-		print("Falha ao ler dados do DHT11 !!!")
+# Efetua a leitura do sensor
+umid, temp = Adafruit_DHT.read_retry(sensor, pino_sensor);
+# Caso leitura esteja ok, mostra os valores na tela
+if umid is not None and temp is not None:
+    with open('dadostempumid.txt', 'w') as arquivo:
+        print("Temperatura = {0:0.1f} C  Umidade = {1:0.1f} %".format(temp, umid), file=arquivo)
+    
+else:
+	# Mensagem de erro de comunicacao com o sensor
+	print("Falha ao ler dados do DHT11 !!!")

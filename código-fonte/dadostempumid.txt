@@ -1,0 +1,1 @@
+Temperatura = 27.0 C  Umidade = 64.0 %
