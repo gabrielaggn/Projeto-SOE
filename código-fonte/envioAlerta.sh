@@ -1,4 +1,6 @@
 #!/bin/bash
+
+#Desenvolvido para o projeto de SOE, UnB - GAMA. ALUNAS : GABRIELA GOES e PAMELA CAMPAGNUCCI
 TOKEN="5930363802:AAH1VMsE95atmqlp9Eblrzjpe_cMR-czR-8"
  
 USER=$1
