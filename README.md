@@ -14,6 +14,11 @@ Envia fotos do animal e temperatura e umidade do ar, quando o dono solicita ao b
 2. Na pasta [documentação](https://github.com/gabrielaggn/Projeto-SOE/tree/main/documenta%C3%A7%C3%A3o), encontram-se o relatório do projeto, o bom e o esquemático do hardware.
 3. Na pasta [referências](https://github.com/gabrielaggn/Projeto-SOE/tree/main/refer%C3%AAncias), encontram-se as referências utilizadas no projeto
 
+### Sistema Operacional Embarcado Utilizado:
+- Raspberry Pi 3 Modelo B.
+![Raspberry Pi](https://cdn-reichelt.de/bilder/web/xxl_ws/A300/RASPBERRY_PI_3B_PLUS_001.png)
+
+
 
 
 
