@@ -1,3 +1,4 @@
+#!/usr/bin/bash
 # Importando API
 #
 # INICIO
@@ -40,19 +41,21 @@ do
                     ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
                                          --text "Olá *${message_from_first_name[$id]}*, segue info do seu pet" \
                                          --parse_mode markdown
-                    fswebcam -r 1920x1080 --no-banner /home/gabriela/Desktop/$DATE.jpg
+                    # Envia a foto.
+                    fswebcam -r 1920x1080 -v -S 10 --set brightnees=100%  --no-banner /home/gabriela/Desktop/fotoPet.jpg
 
-                    curl -F "chat_id=${message_chat_id[$id]}" -F "photo=@/home/gabriela/Desktop/$DATE.jpg" https://api.telegram.org/bot5930363802:AAH1VMsE95atmqlp9Eblrzjpe_cMR-czR-8/sendphoto
+                    curl -F "chat_id=${message_chat_id[$id]}" -F "photo=@/home/gabriela/Desktop/fotoPet.jpg" https://api.telegram.org/bot5930363802:AAH1VMsE95atmqlp9Eblrzjpe_cMR-czR-8/sendphoto
                     
-                    python3 tempUmid.py
+                    python3 /home/gabriela/tempUmid.py
                     
-                    var=$(cat dadostempumid.txt)
+                    var=$(cat sudo /home/gabriela/dadostempumid.txt)
                     
                     ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
                                          --text "{$var}" \
                                          --parse_mode markdown
-                    
-                    
+                    rm /home/gabriela/Desktop/id.txt         
+                    echo ${message_chat_id[$id]} >> /home/gabriela/Desktop/id.txt
+                                  
                     
                 ;;
             esac
