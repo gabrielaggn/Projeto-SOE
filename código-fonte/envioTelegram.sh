@@ -1,10 +1,5 @@
 #!/usr/bin/bash
 # Importando API
-#
-# INICIO
-# bot_script
-
-# Importando API
 source ShellBot.sh
 
 # Token do bot
@@ -18,7 +13,6 @@ ShellBot.username
 
 #pega a data
 DATE=$(date +"%Y-%m-%d_%H%M%S")
-
 # loop
 while :
 do
@@ -54,8 +48,7 @@ do
                                          --text "{$var}" \
                                          --parse_mode markdown
                     rm /home/gabriela/Desktop/id.txt         
-                    echo ${message_chat_id[$id]} >> /home/gabriela/Desktop/id.txt
-                                  
+                    echo ${message_chat_id[$id]} >> /home/gabriela/Desktop/id.txt                               
                     
                 ;;
             esac
